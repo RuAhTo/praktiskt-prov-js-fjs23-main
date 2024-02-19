@@ -124,11 +124,11 @@ const watchList = [
   
   //Inte färdig funktion
 
-  function myWatchList(movies) {
-    // Din kod här:
-    const movieTitlesRating = movies.map((movies) => `Title: ${movies.Title}, Rating: ${movies.imdbRating}`)
-    return filteredMovies = movieTitlesRating.filter((movies, num) => num <= movies.imdbRating);
-  }
+  // function myWatchList(movies) {
+  //   // Din kod här:
+  //   const movieTitlesRating = movies.map((movies) => `Title: ${movies.Title}, Rating: ${movies.imdbRating}`)
+  //   return filteredMovies = movieTitlesRating.filter((movies, num) => num <= movies.imdbRating);
+  // }
 
 
   // Test 

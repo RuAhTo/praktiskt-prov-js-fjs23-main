@@ -15,15 +15,12 @@ async function getPosts (){
     }
     const todos = await response.json();
     const completedTodos = todos.filter(todo => todo.completed)
-    const containerElement = document.createElement('div')
-    containerElement.id = "posts";
     completedTodos.forEach(todo => {
         const titleElement = document.createElement('p');
         titleElement.textContent = todo.title;
         document.body.appendChild(titleElement);
         console.log(completedTodos)
-    })
-    
+    });
     }catch(error){
         console.log(error);
         throw error;

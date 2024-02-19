@@ -12,10 +12,9 @@ const cameraGear = [
   
   function calculateTotalPrice(shoppingCart) {
     // Din kod här
-    return totalPrice = shoppingCart.reduce((sum, i) => sum + i, 0)
-  }
-  
+    return totalPrice = shoppingCart.reduce((sum, i) => {return sum + i.price;}, 0)
 
+  }
   // Test
   console.log(calculateTotalPrice(cameraGear)); // Ska logga: 550
   
